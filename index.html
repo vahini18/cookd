@@ -1,48 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cookd-Your Cooking Buddy</title>
-   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body >
-  <section class="bg-white rounded-2xl p-5 sticky">
-  <div class="container  mx-auto ">
-    <div class="flex">
-      <img class="w-30 h-10 pl-9 border-pink-50 "src="src/style/images/logo.png">
-      <div>
-        <button class="lg:hidden py-2 px-3">
-         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-</svg>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookd – Your Cooking Buddy</title>
 
-        </button>
-        <ul class="hidden lg:flex pl-5 ">
-          
-            <li class="pr-5 py-2"><a class="px-5 font-medium  text-gray-800 hover:text-orange-700" href="">Home</a></li>
-            <li class="pr-5 py-2"><a class="px-5 font-medium  text-gray-800  hover:text-orange-700" href="">Recipes</a></li>
-            <li class="pr-5 py-2"><a class="px-5 font-medium  text-gray-800  hover:text-orange-700" href="">Shop</a></li>
-            <li class="pr-5 py-2"><a class="px-5 font-medium  text-gray-800  hover:text-orange-700" href="">Blog</a></li>
-          <li class="pr-5 py-2"><a class="px-5 font-medium text-gray-800 hover:text-orange-700" href="">Search</a></li>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-white text-gray-900">
+<header class="border-b">
+  <div class="container mx-auto px-6 py-4 flex items-center">
+    <img src="src/style/images/logo.png" class="h-8" alt="Logo">
+
+    <nav class="hidden lg:flex ml-10 space-x-6">
+      <a href="#" class="font-medium hover:text-orange-600">Home</a>
+      <a href="#" class="font-medium text-orange-600">Recipes</a>
+      <a href="#" class="font-medium hover:text-orange-600">Shop</a>
+      <a href="#" class="font-medium hover:text-orange-600">Blog</a>
+      <a href="#" class="font-medium hover:text-orange-600">Search</a>
+    </nav>
+
+    <a href="#" class="ml-auto bg-orange-600 text-white px-4 py-2 rounded-md font-semibold">
+      Sign in
+    </a>
+  </div>
+</header>
+<section class="container mx-auto px-6 py-6">
+  <img src="src/style/images/recipesHomePage.png"
+       class="w-full rounded-xl"
+       alt="Recipes Banner">
+</section>
+<div class="container mx-auto px-6 text-sm text-gray-500">
+  <span class="text-orange-600 font-medium">Home</span>
+  <span class="mx-2">›</span>
+  <span>Recipes</span>
+</div>
+<section class="container mx-auto px-6 py-10">
+  <h2 class="text-2xl font-bold mb-6">Cuisines</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+   
+  </div>
+</section>
+<section class="container mx-auto px-6 py-10">
+  <h2 class="text-2xl font-bold mb-6">Meals</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+  </div>
+</section>
+<section class="container mx-auto px-6 py-10">
+  <h2 class="text-2xl font-bold mb-6">Course of meal</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+  </div>
+</section>
+<footer class="border-t mt-12">
+  <div class="container mx-auto px-6 py-10">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+
+      <div>
+        <h3 class="font-semibold mb-4">Connect</h3>
+        <ul class="space-y-2 text-gray-600">
+          <li><a href="#" class="hover:text-orange-600">Facebook</a></li>
+          <li><a href="#" class="hover:text-orange-600">Twitter</a></li>
+          <li><a href="#" class="hover:text-orange-600">Instagram</a></li>
+          <li><a href="#" class="hover:text-orange-600">LinkedIn</a></li>
         </ul>
       </div>
-      
-      <a href="" class="font-bold bg-amber-700 text-white px-3 py-2 rounded ml-auto">Sign in</a>
+
+      <div>
+        <h3 class="font-semibold mb-4">Contact</h3>
+        <p class="text-gray-600 mb-2">support@cookdtv.com</p>
+        <p class="text-gray-600 leading-relaxed">
+          AWFIS Building, Rajiv Gandhi Salai,<br>
+          OMR, Kandanchavadi,<br>
+          Chennai, Tamil Nadu 600096
+        </p>
+      </div>
+
     </div>
-    <div>
-        <ul class="lg:hidden pl-5 ">
-            <li class="mt-1 "><a class="py-2" href="">Home</a></li>
-            <li class="mt-1 "><a class="py-2" href="">Recipes</a></li>
-            <li class="mt-1 "><a class="py-2" href="">Shop</a></li>
-            <li class="mt-1 "><a class="py-2" href="">Blog</a></li>
-          <li class="mt-1"><a class="py-2" href="">Search</a></li>
-        </ul>
+    <div class="border-t pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600">
+      <div class="flex space-x-6 mb-4 md:mb-0">
+        <a href="#" class="hover:text-orange-600">Terms and conditions</a>
+        <a href="#" class="hover:text-orange-600">Privacy Policy</a>
+      </div>
+
+      <div>
+        ©2025 - Cookd | All Rights reserved
+      </div>
     </div>
-    <div class="py-6">
-        <img class="h-50 " src="src/style/images/recipesHomePage.png">
-    
+
   </div>
-  </section>
+</footer>
+
 </body>
 </html>
